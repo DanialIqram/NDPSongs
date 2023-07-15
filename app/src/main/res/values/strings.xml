@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Song List</string>
+    <string name="song_title_label">Song Title:</string>
+    <string name="enter_song_title_label">Enter song title here</string>
+    <string name="edit_song_title_label">Edit song title here</string>
+    <string name="singers_label">Singers:</string>
+    <string name="enter_singers_label">Enter singer\'s name here</string>
+    <string name="edit_singers_label">Edit singer\'s name here</string>
+    <string name="year_label">Year:</string>
+    <string name="enter_year_label">Enter year of release here</string>
+    <string name="edit_year_label">Edit year of release here</string>
+    <string name="stars_label">Stars:</string>
+    <string name="insert_label">Insert</string>
+    <string name="show_list_label">Show List</string>
+    <string name="one_star_label">1</string>
+    <string name="two_star_label">2</string>
+    <string name="three_star_label">3</string>
+    <string name="four_star_label">4</string>
+    <string name="five_star_label">5</string>
+    <string name="song_list_label">List of Songs</string>
+    <string name="show_5_label">show all songs with 5 stars</string>
+    <string name="update_label">update</string>
+    <string name="delete_label">delete</string>
+    <string name="cancel_label">cancel</string>
+</resources>
