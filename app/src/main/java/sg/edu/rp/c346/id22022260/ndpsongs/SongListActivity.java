@@ -24,7 +24,8 @@ public class SongListActivity extends AppCompatActivity {
     ArrayList<Song> songList = new ArrayList<Song>();
     ArrayList<Song> songs;
     ArrayList<String> spinnerList = new ArrayList<String>();
-    ArrayAdapter<Song> aaSongs;
+//    ArrayAdapter<Song> aaSongs;
+    CustomAdapter songsAdapter;
     ArrayAdapter<String> aaSpinner;
 
     @Override
@@ -39,8 +40,10 @@ public class SongListActivity extends AppCompatActivity {
         }
 
         lv = findViewById(R.id.lv);
-        aaSongs = new ArrayAdapter<Song>(this, android.R.layout.simple_list_item_1, songList);
-        lv.setAdapter(aaSongs);
+        songsAdapter = new CustomAdapter(this, R.layout.row, songList);
+        lv.setAdapter(songsAdapter);
+//        aaSongs = new ArrayAdapter<Song>(this, android.R.layout.simple_list_item_1, songList);
+//        lv.setAdapter(aaSongs);
 
         spinner = findViewById(R.id.spinner);
         aaSpinner = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinnerList);
@@ -106,7 +109,7 @@ public class SongListActivity extends AppCompatActivity {
 
         songList.clear();
         songList.addAll(songs);
-        aaSongs.notifyDataSetChanged();
+        songsAdapter.notifyDataSetChanged();
     }
 
     private void loadSongs(int year) {
@@ -116,6 +119,6 @@ public class SongListActivity extends AppCompatActivity {
 
         songList.clear();
         songList.addAll(songs);
-        aaSongs.notifyDataSetChanged();
+        songsAdapter.notifyDataSetChanged();
     }
 }

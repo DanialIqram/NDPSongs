@@ -49,6 +49,15 @@ public class Song implements Serializable {
         stars = newStars;
     }
 
+    public String getStarDisplay() {
+        String starText = "";
+        for (int a = 0; a < stars; a++) {
+            starText += "⭐";
+        }
+
+        return starText;
+    }
+
     @NonNull
     @Override
     public String toString() {
